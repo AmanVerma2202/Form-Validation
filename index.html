@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration from</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+    <div class="container">
+        <div class="header">
+            <h2>Registration From</h2>
+        </div>
+        <form action="" name="reg" onsubmit="return validate()" class="from" id="form">
+            <div class="form-control">
+                <label for="">Username:</label>
+                <input type="text" name="user" id="username" placeholder="Enter full name">
+                <div class="msg" id="user"> 
+                    <small id="errorUser" class="error"></small>
+                </div>
+            </div>
+            <div class="form-control ">
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <div class="msg" id="mail"> 
+                    
+                    <small id="error" class="error"></small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="">Password:</label>
+                <input type="password" name="pass" id="password" placeholder="Password">
+                <div class="msg" id="pass" > 
+                    
+                    <small id="error" class="error"></small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="">Confirm Password:</label>
+                <input type="password" name="cpass"  placeholder="Confirm password">
+                <div class="msg" id="cpass"> 
+                    
+                    <small id="error" class="error"></small>
+                </div>
+            </div>
+            <div class="form-control " >
+                <label for="">Phone Number:</label>
+                <input type="number" name="num" id="number" placeholder="Enter phone nuumber">
+                <div class="msg" id="phone"> 
+                    
+                    <small id="errorNumber" class="error"></small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter address">
+                <div class="msg" id="add"> 
+                    
+                    <small id="error" class="error"></small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="">Blood Group:</label>
+                <select name="blood"  class="blood" id="blood">
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
+                
+            </div>
+            <div class="form-control flex">
+                <label for="">Gender:</label>
+                <br>
+                <input class="radio" id="gender" type="radio"name="gender" value="M">
+                <label for="">Male</label>
+                <input class="radio" id="gender" type="radio"  name="gender" value="F">
+                <label for="">Female</label>
+                <input class="radio" id="gender" type="radio"  name="gender" value="T">
+                <label for="">Transgender</label>
+                
+            </div>
+            <input type="submit" style="cursor: pointer;" value="Submit">
+            
+        </form>
+    </div>
+
+
+    <script src="style.js"></script>
+</body>
+</html>
